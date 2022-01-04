@@ -29,7 +29,7 @@ public class Controllerkasir {
         n.addAttribute("namasayur",nama);
         n.addAttribute("hargasayur",harga);
         n.addAttribute("jumlahkilo",jumlah);
-        n.addAttribute("beforeprice",shop.hargaawal(harga, jumlah)+"%");
+        n.addAttribute("beforeprice",shop.hargaawal(harga, jumlah));
         n.addAttribute("discnumber",shop.disc(shop.hargaawal(harga, jumlah))+"%");
         n.addAttribute("discquantity",shop.discount(harga, jumlah));
         n.addAttribute("afterprice",shop.hargaakhir(harga, jumlah));
